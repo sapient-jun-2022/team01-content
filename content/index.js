@@ -5,10 +5,14 @@ import routes from './src/routes/content-route';
 
 // variable declaration
 const app = express();
-const PORT = 3000;
+require('dotenv').config()
+
+const PORT = process.env.PORT
+const DB_URL = process.env.DB_URL
+
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/video-streaming-db', { useNewUrlParser: true });
+mongoose.connect(DB_URL, { useNewUrlParser: true });
 
 
 // configuration

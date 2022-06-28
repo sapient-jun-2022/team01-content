@@ -70,6 +70,4 @@ export const deleteContentById = (req, res) => {
 
 
 
-export const home = (req, res) => {
-    res.json({ "message": "Welcome from Express" });
-}
+

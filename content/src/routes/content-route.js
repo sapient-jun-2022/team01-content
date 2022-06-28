@@ -8,7 +8,6 @@ import {
 } from "../controllers/content-controller";
 
 const routes = (app) => {
-  app.route("/").get(home);
 
   app.route("/content").get(getAllContent).post(addContent);
 

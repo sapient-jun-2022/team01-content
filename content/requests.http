@@ -1,4 +1,4 @@
-GET http://localhost:3000/ HTTP/1.1
+
 
 ###
 
@@ -7,13 +7,13 @@ POST http://localhost:3000/content HTTP/1.1
 Content-Type: application/json
 
 {
-    "title" :"DDLJ", 
-    "hashtag" :"#ddlj", 
-    "description" :"intresting video", 
-    "video_link" :"content/videos/ddlj.mp4", 
+    "title" :"GameOfThrones", 
+    "hashtag" :"#got", 
+    "description" :"web series", 
+    "video_link" :"content/videos/got.mp4", 
     "video_running_time" :30,
     "region_availablity" : "India",
-    "language":"hindi"
+    "language":"english"
 
 
 }
@@ -25,4 +25,4 @@ GET http://localhost:3000/content HTTP/1.1
 
 
 ### 
-GET http://localhost:3000/content/language/hindi HTTP/1.1
+GET http://localhost:3000/content/language/english HTTP/1.1
